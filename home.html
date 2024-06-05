@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            width: 100%;
+        }
+        .head {
+            position: relative;
+            height: 35%;
+            width: 100%;
+            background-color:  rgb(46, 46, 75);
+            display: flex;
+            gap: 47px;
+            clip-path: polygon(0% -0.25%, 100% -0.25%, 100% 92%, 50% 55.25%, 0% 92%, 0% 53.25%);
+        }
+        #img1 {
+            height: 207px;
+            width: 212px;
+            background-color: rgb(235, 88, 34);
+            position: absolute;
+            top: 52px;
+            left: 45px;
+            border-radius: 58px;
+        }
+        #img2 {
+            height: 223px;
+            width: 241px;
+            border: solid;
+            position: relative;
+            bottom: 159px;
+            left: -27px;
+            border-radius: 161px;
+        }
+        #box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: -19px;
+            gap: 38px;
+            padding-right: 94px;
+        }
+        #tick {
+            position: relative;
+            top: 9px;
+        }
+        h2 {
+            text-align: center;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #first {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        input {
+            background-color: orangered;
+            height: 90px;
+            width: 300px;
+            margin: 10px;
+            border-radius: 19px;
+        }
+        input::placeholder {
+            color: white;
+            opacity: 1;
+            text-align: center;
+        }
+        .centered {
+       position: absolute;
+        top: 23%;
+        left: 11%;
+        color: white;
+        font-size: medium;
+        transform: translate(-50%, -50%);
+       }
+   
+        @media (max-width: 768px) {
+            .head {
+                flex-direction: column;
+                height: 40%;
+                padding: 15px;
+            }
+            #img1, #img2 {
+                width: 60%;
+                max-width: 200px;
+                position: relative;
+                top: 0;
+                left: 0;
+                margin-bottom: 10px;
+            }
+            #img2 {
+                bottom: 0;
+                left: 0;
+            }
+            #img1 {
+                top: -172px;
+                left: 0;
+            }
+            .centered{
+                left: 50%;
+                align-self: center;
+            }
+            #first {
+                flex-direction: column;
+                align-items: center;
+            }
+            #box {
+                padding-right: 0;
+            }
+        }
+        @media (max-width: 480px) {
+            .head {
+                padding: 15px;
+                height: 40%;
+            }
+            #img1, #img2 {
+                width: 80%;
+                max-width: 150px;
+            }
+            #box h1, #box h2 {
+                font-size: 1.2em;
+            }
+            .centered{
+                left: 50%;
+                align-self: center;
+            }
+            #col {
+                flex-direction: column;
+                align-items: center;
+            }
+            #col img {
+                width: 40px;
+                margin: 5px 0;
+            }
+            input {
+                width: 80%;
+                max-width: 250px;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="head"></div>
+    <div id="first">
+        <img src="" alt="" id="img1"> 
+        <div class="centered">your logo here </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3i_qZtrjSgoPCyIOywhlX8MKOzRIaQbKU0A&s" alt="" id="img2">
+    </div>
+    <div id="box">
+        <div id="text"><h1>@RealEstateTodd <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVE6PErqPVPjHp9GtiIU1qWi68so9MD89PHg&s" alt="" id="tick" height="39px" width="40px"></h1></div>
+        <div id="col">
+            <img src="email.svg" alt="" height="30px" width="40px">
+            <img src="facebook.svg" alt="">
+            <img src="share.svg" alt="" height="30px" width="40px">
+        </div>
+        <div>
+            <h2>I'm an Agent in the Atlanta,GA area,</h2>
+            <h2>check out my link</h2>
+        </div>
+        <div id="container">
+            <div id="container1" class="b"><input type="text" placeholder="Add your text and link here"></div>
+            <div id="container2" class="b"><input type="text" placeholder="Add your text and link here"></div>
+            <div id="container3" class="b"><input type="text" placeholder="Add your text and link here"></div>
+        </div>
+        <div id="img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLbTGWnADS-iYHrvrCjM5BmmJ4RIDr_mx0Xg&s" alt="">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/485777661.jpg?k=72d29a3b3797bbe5ef10f9786030329170e94f4dc0652125f9b716d0930c080c&o=&hp=1" alt="" height="190px" width="300px">
+            <img src="https://www.shutterstock.com/image-photo/picture-beautiful-village-house-garden-600nw-295065968.jpg" alt=" " height="190px" width="300px">
+        </div>
+    </div>
+</body>
+</html>
